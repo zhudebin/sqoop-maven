@@ -1117,9 +1117,10 @@ public class ImportTool extends com.cloudera.sqoop.tool.BaseSqoopTool {
     options.setExtraArgs(getSubcommandArgs(extraArguments));
     int dashPos = getDashPosition(extraArguments);
 
+      /*
     if (hasUnrecognizedArgs(extraArguments, 0, dashPos)) {
       throw new InvalidOptionsException(HELP_STR);
-    }
+    }   */
 
     validateImportOptions(options);
     validateIncrementalOptions(options);

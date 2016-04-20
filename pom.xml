@@ -37,6 +37,7 @@
         <htrace.version>2.04</htrace.version>
         <hbase-hadoop2.version>1.0.0-cdh5.4.7</hbase-hadoop2.version>
         <hsqldb.version>1.8.0.10</hsqldb.version>
+        <mysql.version>5.1.27</mysql.version>
         <PermGen>64m</PermGen>
         <MaxPermGen>512m</MaxPermGen>
     </properties>
@@ -250,6 +251,11 @@
             <groupId>org.apache.accumulo</groupId>
             <artifactId>accumulo-core</artifactId>
             <version>1.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
     </dependencies>
 </project>
